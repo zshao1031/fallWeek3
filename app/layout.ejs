@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--頁籤設定-->
+  <title><%- title %></title>
+  <link rel="icon" href="./assets/images/favicon.ico">
+
+  <!--網站描述與關鍵字設定-->
+	<meta name="description" content="此網站為書豪參加六角學院秋季切版班的第三週作品">
+	<meta name="keywords" content="HexSchool, GlassesImageWebsite, Week3">
+
+  <!--載入google fonts的Roboto字體-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!--載入CSS-->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+    <!--表頭區-->
+    <header class="header">
+        <!--Logo-->
+        <h1 class="header__flexItem">
+            <a href="index.html" alt="logo圖" class="header__logo">logo</a>
+        </h1>
+        <!--表頭選單-->
+        <ul class="header__menuList header__flexItem">
+            <li class="header__menuList__flexItem"><a href="product.html" class="header__menuList__btn">系列鏡框</a></li>
+            <li class="header__menuList__flexItem"><a href="location.html" class="header__menuList__btn">門市據點</a></li>
+            <li class="header__menuList__flexItem"><a href="blog.html" class="header__menuList__btn">部落格</a></li>
+            <li class="header__menuList__flexItem"><a href="FAQ.html" class="header__menuList__btn">常見問題</a></li>
+        </ul>
+    </header>
+
+    <!--gulp自動填入各頁內容-->
+    <%- contents %>
+
+    <!--表尾區-->
+    <footer class="footer">
+        <!--框範圍置中的容器-->
+        <div class="footer__container">
+            <!--聯絡資訊區-->
+            <div class="footer__contact">
+                <div class="footer__contact__aside footer__contact__flexItem">
+                    <!--表尾選單-->
+                    <ul class="footer__menuList">
+                        <li class="footer__menuList__flexItem"><a href="index.html" class="footer__menuList__btn">首頁</a></li>
+                        <li class="footer__menuList__flexItem"><a href="product.html" class="footer__menuList__btn">系列錶框</a></li>
+                        <li class="footer__menuList__flexItem"><a href="location.html" class="footer__menuList__btn">門市據點</a></li>
+                        <li class="footer__menuList__flexItem"><a href="blog.html" class="footer__menuList__btn">部落格</a></li>
+                        <li class="footer__menuList__flexItem"><a href="FAQ.html" class="footer__menuList__btn">常見問題</a></li>
+                    </ul>
+                    <!--聯絡資訊-->
+                    <ul class="footer__contact__info">
+                        <li class="tel">                        
+                            <a href="tel:0800000000" class="info"><img src="assets/images/layout/local_phone-24px.svg" alt="電話Icon" class="icon">0800-000-000</a>
+                        </li>
+                        <li class="mail">    
+                            <a href="mailto:glasses@business.com" class="info"><img src="assets/images/layout/mail_outline-24px.svg" alt="信箱Icon" class="icon"> glasses@business.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--社群網站連結-->
+                <ul class="footer__snsList footer__contact__flexItem">
+                    <li class="footer__snsList__flexItem"><a href="https://www.facebook.com/" alt="Facebook連結圖片" class="footer__snsList__btn footer__snsList__fbIcon"></a></li>
+                    <li class="footer__snsList__flexItem"><a href="https://www.instagram.com/" alt="Instagram連結圖片" class="footer__snsList__btn footer__snsList__igIcon"></a></li>
+                    <li class="footer__snsList__flexItem"><a href="http://official-blog.line.me/tw/" alt="Line連結圖片" class="footer__snsList__btn footer__snsList__lineIcon"></a></li>
+                </ul>
+            </div>
+            <!--版權聲明區-->
+            <div class="copyRightsArea">
+                <ul class="copyRights__textList copyRightsArea__flexItem">
+                    <li class="copyRights__textList__flexItem"><img src="assets/images/layout/logo.png" alt="Logo圖" class="copyRights__textList__logo"></li>
+                    <li class="copyRights__textList__text copyRights__textList__flexItem">Copyright © 2020 Glasses.All rights reserved.</li>
+                </ul>
+                <ul class="copyRights__linksList copyRightsArea__flexItem">
+                    <li class="copyRights__linksList__privacyPolicy copyRights__linksList__flexItem"><a href="index.html" class="copyRights__linksList__privacyPolicy__link">隱私權政策</a></li>
+                    <li class="copyRights__linksList__TermsOfService copyRights__linksList__flexItem"><a href="index.html" class="copyRights__linksList__TermsOfService__link">服務條款</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

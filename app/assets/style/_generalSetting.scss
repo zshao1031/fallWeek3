@@ -1,0 +1,21 @@
+/*【通用設定】*/
+
+/*使padding與border不會增加總寬度*/
+*,*:before,*:after{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/*字型設定*/
+body{
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+
+/*使圖片不會在下方多出2~3px空間*/
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+

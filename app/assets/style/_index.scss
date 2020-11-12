@@ -1,0 +1,134 @@
+/*banner背景圖*/
+.faq__banner{
+    height: 304px;
+    background-image: url(../images/FAQ/72.png);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 80px;
+
+    @include phone767{
+        margin-bottom: 40px;
+    }
+
+    @include phone575{
+        margin-bottom: 24px;    
+    }
+}
+
+/*背景圖中的容器，用來固定標題位置*/
+.faq__banner__container{
+    width: 1110px;
+    height: 304px;
+    margin: 0 auto;
+    position: relative;
+
+    @include pc1200{
+        max-width: 92.5%;
+    }
+}
+
+.faq__banner__title{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.faq__banner__title__text{
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: $fw_bold;
+    margin-right: 24px;
+
+    @include phone767{
+        font-size: 48px;
+        line-height: 80px;
+    }
+}
+
+.faq__main__container{
+    width: 1110px;
+    margin: 0 auto;
+    
+    @include pc1200{
+        max-width: 92.5%;
+    }
+}
+
+
+.faq__main__title{
+    font-size: 32px;
+    line-height: 63px;
+    font-weight: $fw_bold;
+    margin-bottom: 36px;
+
+    @include phone575{
+        margin-bottom: 12px;        
+    }
+}
+
+//與footer的推擠
+.faq__main__questionList{
+    margin-bottom: 304px;
+
+    @include phone767{
+        margin-bottom: 104px;        
+    }
+
+    @include phone575{
+        margin-bottom: 56px;        
+    }
+}
+
+
+.faq__main__questionList__question{
+    
+    h4{
+        font-size: 20px;
+        font-weight: $fw_bold;
+        color: $fc_primary_b;
+        line-height: 23px;
+        margin-bottom: 16px;
+
+        @include phone575{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 8px;        
+        }
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: $fw_regular;
+        margin-left: 90px;
+        margin-bottom: 40px;
+
+        @include phone767{
+            margin-left: 60px;
+            margin-bottom: 40px;
+        }
+
+        @include phone575{
+            font-size: 14px;
+            line-height: 21px;
+            margin-left: 0px;
+            margin-bottom: 20px;  
+        }
+    }
+
+    .p-mb{
+        margin-bottom: 0px;
+
+        @include phone575{
+            margin-bottom: 20px;
+        }
+    }
+
+    .last-mb{
+        margin-bottom: 0px;
+    }
+}
+
+
+

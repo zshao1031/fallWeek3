@@ -1,0 +1,50 @@
+/*【變數設定】*/
+
+/*網站配色*/
+$bg_primary_r: #AA0601;
+$bg_secondary_w: #FBF2F2;
+$fc_primary_b: #000000;
+$fc_primary_w: #FFFFFF;
+$fc_secondary_r: #AA0601;
+
+/*字體粗細*/
+$fw_regular: 400;
+$fw_medium: 500;
+$fw_bold: 700;
+$fw_black: 900;
+
+/*PC版型*/
+@mixin pc1200{
+    @media(max-width: 1200px){
+        @content;
+    }
+}
+
+/*平板版型*/
+@mixin pad991{
+    @media(max-width: 991px){
+        @content;
+    }
+}
+
+/*大手機版型*/
+@mixin phone767{
+    @media(max-width: 767px){
+        @content;
+    }
+}
+
+/*小手機板型*/
+@mixin phone575{
+    @media(max-width: 575px){
+        @content;
+    }
+}
+
+//最小的手機板型//
+@mixin phone374{
+    @media(max-width: 374px){
+        @content;
+    }
+}
+
